@@ -1,0 +1,11 @@
+version: '2'
+services:
+    transactor-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/transactor/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=transactor
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
